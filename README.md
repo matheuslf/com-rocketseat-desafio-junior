@@ -1,6 +1,11 @@
 # 🏥 Desafio de Vaga Junior - API de Gestão de Beneficiários de Plano de Saúde
 
-Este projeto é uma API REST desenvolvida com Spring Boot para gerenciamento de beneficiários e seus documentos em um plano de saúde.
+Considerando o seguinte diagrama de classes:
+
+![image](https://github.com/user-attachments/assets/fbbcc151-1cf1-40db-a8f0-721751bf6366)
+
+Crie uma aplicação utilizando Java e Spring Boot que forneça uma API REST para manter o cadastro
+de beneficiários de um plano de saúde.
 
 ---
 
