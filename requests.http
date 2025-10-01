@@ -1,0 +1,56 @@
+### Criar beneficiário com documentos
+POST http://localhost:8080/beneficiarios
+Content-Type: application/json
+
+{
+  "nome": "Matheus Leandro Ferreira",
+  "telefone": "123",
+  "dataNascimento": "1986-09-28",
+  "documentos": [
+    {
+      "tipoDocumento": "CPF",
+      "descricao": "789456123"
+    },
+    {
+      "tipoDocumento": "RG",
+      "descricao": "MG1234567"
+    }
+  ]
+}
+
+###
+
+### Listar todos os beneficiários
+GET http://localhost:8080/beneficiarios
+
+###
+
+### Listar documentos de um beneficiário pelo ID
+GET http://localhost:8080/beneficiarios/2/documentos
+
+###
+
+### Atualizar um beneficiário
+PUT http://localhost:8080/beneficiarios/1
+Content-Type: application/json
+
+{
+  "nome": "Matheus Leandro Ferreira",
+  "telefone": "123",
+  "dataNascimento": "1986-09-28",
+  "documentos": [
+    {
+      "tipoDocumento": "CPF",
+      "descricao": "999999"
+    },
+    {
+      "tipoDocumento": "RG",
+      "descricao": "999999"
+    }
+  ]
+}
+
+###
+
+### Remover um beneficiário
+DELETE http://localhost:8080/beneficiarios/1
